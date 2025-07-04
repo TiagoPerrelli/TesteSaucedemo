@@ -90,7 +90,7 @@ test.describe('Testes Não Obrigatórios', ()=>{
         await paginaItens.selecionarOpcaoCrescenteFiltro();
         const ordemDosPrecos = await paginaItens.obterPrecos();
         const ordemDosPrecosEsperada = [...ordemDosPrecos].sort((a, b) => a - b)
-        console.log('Verificando ordem dos preços se está de acordo com o esperado')
+        console.log('Verificando se ordem dos preços se está de acordo com o esperado')
         expect(ordemDosPrecos).toStrictEqual(ordemDosPrecosEsperada);
     })
 })

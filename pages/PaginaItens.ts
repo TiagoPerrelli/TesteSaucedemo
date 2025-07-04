@@ -41,7 +41,7 @@ export class PaginaItens extends AbstractPage{
     async selecionarOpcaoCrescenteFiltro(){
         await this.clicarBotaoFiltro();
         await this.page.selectOption(this.botaoFiltro, {label: 'Price (low to high)'})
-        console.log('Selecionado opção de filtro:: Price (low to high)')
+        console.log('Selecionado opção de filtro: Price (low to high)')
     }
 
     async obterPrecos(): Promise<number[]>{
