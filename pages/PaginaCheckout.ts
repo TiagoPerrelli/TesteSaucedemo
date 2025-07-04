@@ -30,7 +30,7 @@ export class PaginaCheckout extends AbstractPage{
     async preencherInformacoesDeCheckout(){
         await this.preencherFirstName('Tiago')
         await this.preencherLastName('Perrelli')
-        await this.preencherZipPostalCode('52050130')
+        await this.preencherZipPostalCode('55555555')
     }
 
     async clicarBotaoContinue(){

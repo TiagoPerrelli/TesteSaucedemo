@@ -18,9 +18,9 @@
 
 # Qualquer consideração técnica que achar relevante<br>
 - Foram criadas três pastas para facilitar a escalabilidade e manutenabilidade do código.<br>
-. A pasta de fixtures que contém o arquivo helpers.ts criada com o objetivo de simplificar o código;<br>
-. A pasta pages que contém as classes das páginas onde possuem métodos específicos à elas, facilitando toda a criação de testes;<br>
-. A pasta de tests onde estão alocados os testes no arquivo testes.spec.ts - Aqui, os testes estão segregados por testes obrigatórios e os não obrigatórios. <br>
+. A pasta de [fixtures](fixtures\helpers.ts) que contém o arquivo [helpers.ts](fixtures\helpers.ts) criada com o objetivo de simplificar o código;<br>
+. A pasta [pages](pages) armazena as classes das páginas, com métodos específicos que auxiliam na automação dos testes.;<br>
+. A pasta de [tests](tests) onde estão alocados os testes no arquivo testes.spec.ts - Aqui, os testes estão segregados por testes obrigatórios e os não obrigatórios. <br>
 - Foram realizados alguns cenários a mais, sendo eles: <br>
 . Cenário 5 - Verificar o tempo de remoção de um item do carrinho: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;  > Verifição do tempo de remoção de um item do carrinho, a fim de verificar se está com boa performance. <br>
