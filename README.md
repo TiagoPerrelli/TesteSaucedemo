@@ -1,14 +1,20 @@
 # Como instalar dependências <br>
 - Para executar o código, é necessário possuir o Node.js instalado no computador, para isso, vá até o site https://nodejs.org/pt/download e instale a sua última versão. <br>
-- Após isso, digite o seguinte comando no seu terminal na pasta do projeto: `npm init playwright@latest`. <br>
+- Após isso, digite o seguinte comando no seu terminal no local da pasta do projeto:<br><br>
+  ```
+  npm init playwright@latest
+  ```
 - Se assegure de selecionar o tipo de linguagem typescript e aceitar instalar os browsers do playwright. <br>
 
 # Como rodar os testes <br>
-- Para rodar os testes, basta abrir o terminal no local da pasta e rodar o comando a seguir: <br> <br>
-         &nbsp;       &nbsp;&nbsp;    &nbsp;&nbsp;           `npx playwright test` <br> <br>
-- Ao realizar este comando, serão executados todos os testes em 3 diferentes browsers. Caso queira executar os testes somente em um browser e utilizar uma interface mais amigável para acompanhar os logs e execução, basta utilizar o comando acima adicionado de alguns termos, exemplo: <br> <br>
-          &nbsp;       &nbsp;&nbsp;    &nbsp;&nbsp;  `npx playwright test --project firefox --ui` <br> 
-
+- Para rodar os testes, basta abrir o terminal no local da pasta e rodar o comando a seguir: <br><br>
+  ```
+  npx playwright test
+  ``` 
+- Ao realizar este comando, serão executados todos os testes em 3 diferentes browsers. Caso queira executar os testes somente em um browser e utilizar uma interface mais amigável para acompanhar os logs e execução, basta utilizar o comando acima adicionado de alguns termos, exemplo: <br><br>
+  ```
+  npx playwright test --project firefox --ui
+  ```
 
 # Qualquer consideração técnica que achar relevante<br>
 - Foram criadas três pastas para facilitar a escalabilidade e manutenabilidade do código.<br>
