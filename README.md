@@ -18,15 +18,15 @@
 
 # Qualquer consideração técnica que achar relevante<br>
 - Foram criadas três pastas para facilitar a escalabilidade e manutenabilidade do código.<br>
-&nbsp;&nbsp;&nbsp;&nbsp; . A pasta de fixtures que contém o arquivo helpers.ts criada com o objetivo de simplificar o código;<br>
-&nbsp;&nbsp;&nbsp;&nbsp; . A pasta pages que contém as classes das páginas onde possuem métodos específicos à elas, facilitando toda a criação de testes;<br>
-&nbsp;&nbsp;&nbsp;&nbsp; . A pasta de tests onde estão alocados os testes no arquivo testes.spec.ts - Aqui, os testes estão segregados por testes obrigatórios e os não obrigatórios. <br>
+. A pasta de fixtures que contém o arquivo helpers.ts criada com o objetivo de simplificar o código;<br>
+. A pasta pages que contém as classes das páginas onde possuem métodos específicos à elas, facilitando toda a criação de testes;<br>
+. A pasta de tests onde estão alocados os testes no arquivo testes.spec.ts - Aqui, os testes estão segregados por testes obrigatórios e os não obrigatórios. <br>
 - Foram realizados alguns cenários a mais, sendo eles: <br>
-&nbsp;&nbsp;&nbsp;&nbsp; . Cenário 5 - Verificar o tempo de remoção de um item do carrinho: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Verifição do tempo de remoção de um item do carrinho, a fim de verificar se está com boa performance. <br>
-&nbsp;&nbsp;&nbsp;&nbsp; . Cenário 6 - Adicionar mais de um item ao carrinho e verificar segundo item da lista do carrinho: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Verificação do segundo item da lista de compras, utilizando a função nth() para isso.<br>
-&nbsp;&nbsp;&nbsp;&nbsp; . Cenário 7 - Ordenação Crescente dos itens: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Verificação do filtro presente na página de itens, verificando se os itens ficam de fato ordenados em ordem crescente.<br>
-&nbsp;&nbsp;&nbsp;&nbsp; . Cenário 8 - Verificar se imagem do Sauce Labs Backpack está disponível no servidor: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Confirmação de que a imagem está de fato disponível e retornando status 200 (OK).
+. Cenário 5 - Verificar o tempo de remoção de um item do carrinho: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  > Verifição do tempo de remoção de um item do carrinho, a fim de verificar se está com boa performance. <br>
+. Cenário 6 - Adicionar mais de um item ao carrinho e verificar segundo item da lista do carrinho: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  > Verificação do segundo item da lista de compras, utilizando a função nth() para isso.<br>
+ . Cenário 7 - Ordenação Crescente dos itens: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  > Verificação do filtro presente na página de itens, verificando se os itens ficam de fato ordenados em ordem crescente.<br>
+ . Cenário 8 - Verificar se imagem do Sauce Labs Backpack está disponível no servidor: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  > Confirmação de que a imagem está de fato disponível e retornando status 200 (OK).
