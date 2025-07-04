@@ -14,14 +14,17 @@ export class PaginaCheckout extends AbstractPage{
 
     async preencherFirstName(firstName: string){
         await this.page.fill(this.campoFirstName, firstName)
+        console.log('Preenchido o campo de First Name com: ' + firstName)
     }
 
     async preencherLastName(lastName: string){
         await this.page.fill(this.campoLastName, lastName)
+        console.log('Preenchido o campo de Last Name com: ' + lastName)
     }
 
     async preencherZipPostalCode(zip: string){
         await this.page.fill(this.campoZipPostalCode, zip)
+        console.log('Preenchido o campo de Zip/PostalCode com: ' + zip)
     }
 
     async preencherInformacoesDeCheckout(){
@@ -32,5 +35,6 @@ export class PaginaCheckout extends AbstractPage{
 
     async clicarBotaoContinue(){
         await this.page.click(this.botaoContinue)
+        console.log('Procedendo para página de overview')
     }
 }

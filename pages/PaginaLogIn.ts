@@ -14,14 +14,17 @@ export class PaginaLogin extends AbstractPage{
 
     async preencherLogin(username: string){
         await this.page.fill(this.campoLogin, username)
+        console.log('Campo de usuário preenchido com ' + username)
     }
     
     async preencherSenha(password: string){
         await this.page.fill(this.campoSenha, password)
+        console.log('Campo de senha preenchida com ' + password)
     }
 
     async clicarBotaoLogin(){
         await this.page.click(this.botaoLogin)
+        console.log('Realizando login')
     }
 
     verificarMensagemErro(){
@@ -36,6 +39,7 @@ export class PaginaLogin extends AbstractPage{
 
     async goto(){
         await this.page.goto('https://www.saucedemo.com/');
+        console.log('Abrindo a página inicial de login da Saucedemo')
     }
 
 }

@@ -10,5 +10,6 @@ export class PaginaOverview extends AbstractPage{
 
     async clicarbotaoFinish(){
         await this.page.click(this.botaoFinish)
+        console.log('Finalizando a compra')
     }
 }

@@ -4,7 +4,6 @@ import { AbstractPage } from './AbstractPage';
 export class PaginaCheckCompleto extends AbstractPage{
 
     readonly mensagemDeFinalizacao = '[data-test="complete-header"]'
-    readonly textoMensagemDeFinalizacao = 'Thank you for your order!'
 
     constructor(page: Page){
         super(page);
