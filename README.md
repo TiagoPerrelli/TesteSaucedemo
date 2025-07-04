@@ -1,7 +1,7 @@
 - Como instalar dependências <br>
-      . Para executar o código, é necessário possuir o Node.js instalado no computador, para isso, vá até o site [https://nodejs.org/pt/download](url) e instale a sua última versão. <br>
-      . Após isso, digite o seguinte comando no seu terminal da pasta do projeto: `npm install`. <br>
-      . Por fim, digite o seguinte comando no seu terminal da pasta do projeto: `npx playwright install` e aceite a instalação dos navegadores necessários. <br>
+      . Para executar o código, é necessário possuir o Node.js instalado no computador, para isso, vá até o site (https://nodejs.org/pt/download) e instale a sua última versão. <br>
+      . Após isso, digite o seguinte comando no seu terminal da pasta do projeto: `npm init playwright@latest`. <br>
+      . Se assegure de selecionar o tipo de linguagem typescript e aceitar instalar os browsers do playwright. <br>
 
 - Como rodar os testes <br>
       . Para rodar os testes, basta abrir o terminal no local da pasta e rodar o comando a seguir: <br> <br>
