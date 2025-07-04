@@ -51,6 +51,8 @@ test.describe('Testes Obrigatórios', ()=>{
 })
 
 
+
+
 test.describe('Testes Não Obrigatórios', ()=>{
     
     test.beforeEach(async ({paginalogin})=>{
@@ -81,5 +83,14 @@ test.describe('Testes Não Obrigatórios', ()=>{
         await paginaItens.clicarBotaoCarrinho();
         console.log('Verificando segundo item da lista de compras')
         await expect(paginaCarrinho.verificarSegundoItem()).toHaveText('Sauce Labs Bike Light')
+    })
+
+    test('Cenário 7 - Ordenação Crescente dos itens', async({paginalogin, paginaItens})=>{
+        await paginalogin.logarComoStandardUser();
+        await paginaItens.selecionarOpcaoCrescenteFiltro();
+        const ordemDosPrecos = await paginaItens.obterPrecos();
+        const ordemDosPrecosEsperada = [...ordemDosPrecos].sort((a, b) => a - b)
+        console.log('Verificando ordem dos preços se está de acordo com o esperado')
+        expect(ordemDosPrecos).toStrictEqual(ordemDosPrecosEsperada);
     })
 })
