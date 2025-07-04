@@ -1,5 +1,5 @@
 - Como instalar dependências <br>
-      . Para executar o código, é necessário possuir o Node.js instalado no computador, para isso, vá até o site (https://nodejs.org/pt/download) e instale a sua última versão. <br>
+      . Para executar o código, é necessário possuir o Node.js instalado no computador, para isso, vá até o site https://nodejs.org/pt/download e instale a sua última versão. <br>
       . Após isso, digite o seguinte comando no seu terminal da pasta do projeto: `npm init playwright@latest`. <br>
       . Se assegure de selecionar o tipo de linguagem typescript e aceitar instalar os browsers do playwright. <br>
 
@@ -21,4 +21,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp; ~ Cenário 6 - Adicionar mais de um item ao carrinho e verificar segundo item da lista do carrinho: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Nele foi verificado o segundo item da lista de compras, utilizando a função nth() para isso.<br>
 &nbsp;&nbsp;&nbsp;&nbsp; ~ Cenário 7 - Ordenação Crescente dos itens: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Nele foi verificado o filtro presente na página de itens, verificando se os itens ficam de fato ordenados em ordem crescente. Interessante visto que foi necessário usar a função sort.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Nele foi verificado o filtro presente na página de itens, verificando se os itens ficam de fato ordenados em ordem crescente. Interessante visto que foi necessário usar a função sort.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; ~ Cenário 8 - Cenário 8 - Verificar se imagem do Sauce Labs Backpack está disponível no servidor: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; > Confirmação de que a imagem está disponível e retornando status 200, OK.

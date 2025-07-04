@@ -93,4 +93,13 @@ test.describe('Testes Não Obrigatórios', ()=>{
         console.log('Verificando se ordem dos preços se está de acordo com o esperado')
         expect(ordemDosPrecos).toStrictEqual(ordemDosPrecosEsperada);
     })
+
+    test('Cenário 8 - Verificar se imagem do Sauce Labs Backpack está disponível no servidor', async ({playwright }) => {
+        const requestContext = await playwright.request.newContext();
+        const imageUrl = 'https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg';
+        const response = await requestContext.get(imageUrl);
+        console.log('Verificando disponibilidade da imagem no sistema')
+        await expect(response.status()).toBe(200);
+        await requestContext.dispose();
+});
 })
